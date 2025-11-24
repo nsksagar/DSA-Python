@@ -1,0 +1,14 @@
+# Mac System Files
+.DS_Store
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# Ignore personal folders (Optional but recommended since you are in Home)
+Documents/
+Downloads/
+Desktop/
+Movies/
+Music/
+Pictures/
