@@ -57,4 +57,52 @@ class Solution:
             curr = next_node
 
         return head
+    
+
+#### Another solution using dummy head
             
+# Definition of doubly linked list:
+# class ListNode:
+#     def __init__(self, val=0, next=None, prev=None):
+#         self.val = val
+#         self.next = next
+#         self.prev = prev
+
+class Solution:
+    def deleteAllOccurrences(self, head, target):
+
+        dummy_head = ListNode(0, head, None)
+
+        if head: 
+            head.prev = dummy_head
+
+        curr = head 
+
+        while curr: 
+
+            next_node = curr.next 
+
+            if curr.val == target: 
+
+                prev_node = curr.prev
+                prev_node.next = next_node
+
+                if next_node:
+                    next_node.prev = prev_node
+            
+            
+                    curr.next = None
+                    curr.prev = None
+
+            
+            curr = next_node
+
+
+        new_head = dummy_head.next
+        if new_head:
+            new_head.prev = None 
+        
+        return new_head
+             
+            
+
