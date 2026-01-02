@@ -1,9 +1,9 @@
 # Definiton of singly Linked List
-# class ListNode:
-#     def __init__(self, val=0, next=None, child=None):
-#         self.val = val
-#         self.next = next
-#         self.child = child
+class ListNode:
+    def __init__(self, val=0, next=None, child=None):
+        self.val = val
+        self.next = next
+        self.child = child
 
 class Solution:
 
