@@ -12,3 +12,6 @@ Desktop/
 Movies/
 Music/
 Pictures/
+
+.ipynb_checkpoints/ 
+.vscode/
